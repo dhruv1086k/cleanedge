@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+@layer utilities {
+  .cardTextBackdrop {
+    @apply absolute bottom-0 left-0 w-full h-0 bg-black bg-opacity-80 flex justify-center items-center opacity-0 group-hover:h-full group-hover:opacity-100 transition-all duration-500 ease-in-out rounded-xl;
+  }
+  .headerBackdrop {
+    @apply relative w-full h-full z-20
+    before:content-[''] before:absolute before:top-0 before:left-0 
+    before:w-full before:h-[80%] before:mt-[.5rem] before:z-[-1] px-2 -left-2 before:-rotate-2;
+  }
+}
+
+.cardText {
+  font-family: "Rubik Vinyl", serif;
+}
