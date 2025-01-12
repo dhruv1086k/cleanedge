@@ -7,6 +7,7 @@ import card1 from "./card1.png";
 import card2 from "./card2.png";
 import card3 from "./card3.png";
 import leaf from "./leaf.png";
+import BannerImg from "./bannerGirl.png";
 import remove_bg_icon from "./remove_bg_icon.svg";
 import upload_btn_icon from "./upload_btn_icon.svg";
 import upload_icon from "./upload_icon.svg";
@@ -27,6 +28,7 @@ export const assets = {
   card2,
   card3,
   leaf,
+  BannerImg,
   logo_icon,
   arrow_icon,
   header_img,

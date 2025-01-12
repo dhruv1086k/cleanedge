@@ -1,5 +1,6 @@
 import Card from "../components/Democards/Card";
 import Header from "../components/Header/Header";
+import Banner from "../components/ProBanner/Banner";
 import Slider from "../components/Slider/Slider";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Card />
       <Slider />
+      <Banner />
     </>
   );
 }
