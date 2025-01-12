@@ -27,3 +27,20 @@ body {
 .cardText {
   font-family: "Rubik Vinyl", serif;
 }
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  height: 100%;
+  background: transparent;
+}
+
+.slider::-webkit-slider-thumb{
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background-image: url('/slide_icon.svg');
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+}
