@@ -1,3 +1,4 @@
+import ContactSection from "../components/Contact/ContactSection";
 import Card from "../components/Democards/Card";
 import Header from "../components/Header/Header";
 import Banner from "../components/ProBanner/Banner";
@@ -12,6 +13,7 @@ export default function Home() {
       <Slider />
       <Banner />
       <Trusted />
+      <ContactSection />
     </>
   );
 }
