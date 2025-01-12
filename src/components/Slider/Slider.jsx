@@ -12,10 +12,24 @@ export default function Slider() {
     <>
       <div className="w-full h-auto mt-16">
         <h1 className="text-4xl font-bold uppercase text-center">
-          Remove Background Without <br /> Loosing Quality
+          Remove Background Without <br />{" "}
+          <span
+            className="before:content-[''] before:w-full before:h-full"
+            style={{
+              backgroundImage: `url(${assets.leaf})`,
+              backgroundSize: "contain",
+              backgroundPosition: "bottom",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            Loosing
+          </span>{" "}
+          Quality
         </h1>
-        <div className="flex relative w-[800px] h-auto min-h-[450px] mx-auto rounded-3xl overflow-hidden
-        my-10">
+        <div
+          className="flex relative w-[800px] h-auto min-h-[450px] mx-auto rounded-3xl overflow-hidden
+        my-10"
+        >
           {/* background image */}
           <img
             src={assets.image_w_bg}

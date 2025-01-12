@@ -7,6 +7,11 @@ import card1 from "./card1.png";
 import card2 from "./card2.png";
 import card3 from "./card3.png";
 import leaf from "./leaf.png";
+import trustedPeople1 from "./1.png";
+import trustedPeople2 from "./2.png";
+import trustedPeople3 from "./3.png";
+import trustedPeople4 from "./4.png";
+import trustedPeople5 from "./5.png";
 import BannerImg from "./bannerGirl.png";
 import remove_bg_icon from "./remove_bg_icon.svg";
 import upload_btn_icon from "./upload_btn_icon.svg";
@@ -28,6 +33,11 @@ export const assets = {
   card2,
   card3,
   leaf,
+  trustedPeople1,
+  trustedPeople2,
+  trustedPeople3,
+  trustedPeople4,
+  trustedPeople5,
   BannerImg,
   logo_icon,
   arrow_icon,
