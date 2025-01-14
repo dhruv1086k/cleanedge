@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Result from "./pages/Result";
 import BuyCredit from "./pages/Buycredit";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/result" element={<Result />} />
         <Route path="/buy" element={<BuyCredit />} />
       </Routes>
+      <Footer />
     </>
   );
 }

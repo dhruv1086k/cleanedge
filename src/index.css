@@ -46,3 +46,8 @@ body {
   background-size: contain;
   border-radius: 50%;
 }
+
+.bg-layer {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+    url("./../public/bg_layer.png");
+}

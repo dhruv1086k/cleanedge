@@ -1,6 +1,5 @@
 import ContactSection from "../components/Contact/ContactSection";
 import Card from "../components/Democards/Card";
-import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Banner from "../components/ProBanner/Banner";
 import Slider from "../components/Slider/Slider";
@@ -15,7 +14,6 @@ export default function Home() {
       <Banner />
       <Trusted />
       <ContactSection />
-      <Footer />
     </>
   );
 }

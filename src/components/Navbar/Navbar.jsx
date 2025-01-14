@@ -16,7 +16,7 @@ export default function Navbar() {
         {/* Menu Links */}
         <ul className="flex items-center space-x-8 text-black">
           <li>
-            <a href="#remove-background" className="hover:text-gray-600">
+            <a href="#" className="hover:text-gray-600">
               Remove Background
             </a>
           </li>

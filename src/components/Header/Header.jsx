@@ -34,11 +34,12 @@ export default function Header() {
             <h5 className="my-5">
               Upload your images and let our tool handle the rest
             </h5>
-            <a href="#">
-              <button className="px-4 py-2 rounded-lg bg-black text-lg text-white font-semibold">
+            <input type="file" name="uploadImg" id="uploadImg" hidden />
+            <label htmlFor="uploadImg" className="cursor-pointer">
+              <p className="px-4 py-2 rounded-lg bg-black text-lg text-white font-semibold">
                 Upload Image Now
-              </button>
-            </a>
+              </p>
+            </label>
           </div>
           <div className="w-1/2 h-full flex justify-center items-center p-16">
             <img
