@@ -1,7 +1,13 @@
+import { useClerk, UserButton, useUser } from "@clerk/clerk-react";
 import { assets } from "../../assets/assets";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
+  // use to open the sign in modal
+  const { openSignIn } = useClerk();
+  // use to check if the user has signed in or not and get all the user details
+  const { isSignedIn, user } = useUser();
+
   return (
     <>
       <nav className="fixed z-[99] w-full flex items-center justify-between px-32 py-4 bg-white shadow-md">
@@ -30,13 +36,20 @@ export default function Navbar() {
               Pricing
             </a>
           </li>
-          <li>
-            <a href="#">
-              <button className="px-4 py-2 bg-black text-white font-bold rounded hover:bg-gray-800">
-                SIGN UP
+          {!isSignedIn ? (
+            <li>
+              <button
+                onClick={() => openSignIn({})}
+                className="px-4 py-2 bg-black text-white font-bold rounded hover:bg-gray-800"
+              >
+                Get Started
               </button>
-            </a>
-          </li>
+            </li>
+          ) : (
+            <li className="flex justify-center items-center">
+              <UserButton />
+            </li>
+          )}
         </ul>
       </nav>
     </>
