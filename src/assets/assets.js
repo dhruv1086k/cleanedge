@@ -54,40 +54,23 @@ export const assets = {
   credit_icon,
 };
 
-export const testimonialsData = [
+export const creditPlans = [
   {
-    id: 1,
-    text: "I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.",
-    author: "Richard Nelson",
-    image: profile_img_1,
-    jobTitle: "Web Developer",
+    id: "Starter",
+    price: 12,
+    credits: 150,
+    desc: "Perfect for individuals exploring new tools.",
   },
   {
-    id: 2,
-    text: "I've been using bg.removal for nearly 6 months, I had a fantastic experience. The quality is top-notch. I recommend others to try this app.",
-    author: "Donald Jackman",
-    image: profile_img_2,
-    jobTitle: "UI Deginer",
-  },
-];
-
-export const plans = [
-  {
-    id: "Basic",
-    price: 10,
-    credits: 100,
-    desc: "Best for personal use.",
+    id: "Pro",
+    price: 60,
+    credits: 750,
+    desc: "Ideal for professionals managing multiple tasks.",
   },
   {
-    id: "Advanced",
-    price: 50,
-    credits: 500,
-    desc: "Best for business use.",
-  },
-  {
-    id: "Business",
-    price: 250,
-    credits: 5000,
-    desc: "Best for enterprise use.",
+    id: "Elite",
+    price: 300,
+    credits: 6000,
+    desc: "Designed for large teams and extensive operations.",
   },
 ];
