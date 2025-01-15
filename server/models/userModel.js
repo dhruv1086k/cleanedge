@@ -10,6 +10,8 @@ const userSchema = new mongoose.Schema({
 });
 
 const userModel = mongoose.models.user || mongoose.model("user", userSchema);
-// mongoose.models.user -> to check if this model already exists
 
 export default userModel;
+// we will use this model to create users in the database
+
+// clerk users ka data save karega then usko share karega backend ke sath and uske liye ham webhooks use karenge -> ye isliye karenge taaki jab bhi frontend pe user create hoga to vo hamare database me bhi create ho jaye

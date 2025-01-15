@@ -1,23 +1,23 @@
-import "dotenv/config"; //to get all the env var in the backend process
+import "dotenv/config";
 import express from "express";
 import cors from "cors";
-import connectDB from "./configs/config.js";
+import connectDB from "./configs/mongodb.js"; //remember to add .js
 
-// App config
-const PORT = process.env.PORT || 4000; //getting port number provided from .env file or use 4000 if not available in env file
+// App Config
+const PORT = process.env.PORT || 4000;
 const app = express();
 await connectDB();
 
-// Initialize middleware
+// Initialize Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors()); // use to connect our client which is running on another port to server
+app.use(cors()); // to connect our client to backend running on diff port
 
 // API Routes
 app.get("/", (req, res) => {
-  res.send("API working");
+  res.send("API Working");
 });
 
 app.listen(PORT, () => {
-  console.log("server running on port ", PORT);
+  console.log("Server running on ", PORT);
 });
